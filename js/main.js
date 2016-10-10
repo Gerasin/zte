@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	// submenu left
-	$('.wrap__submenu .active > a').on('click', function () {
+	$('.submenu .active > a').on('click', function () {
 		if($(this).parent('li').hasClass('open')) { 
 			$(this).next('ul').slideUp(300);
 			$(this).parent('li').removeClass('open');
@@ -65,6 +65,37 @@ $(document).ready(function() {
 
 	});
 
+	$('.partners__list').owlCarousel({
+    	items:3,
+	    margin:16,
+	    autoHeight:true,
+	    nav:true,
+	    responsive:{
+	        0:{
+	            items:2
+	        },
+	        992:{
+	            items:3
+	        }
+	    }
+	});
+
+
+	$('.advantages').owlCarousel({
+    	items:5,
+	    margin:16,
+	    autoHeight:true,
+	    nav:true,
+	    responsive:{
+	    	0:{
+	            items:1
+	        },
+	        767:{
+	            items:5
+	        }
+	    }
+	});
+
 	// mobile menu
 	$('.menu-btn').on('click', function () {
 		$('.head__menu-wrap, .mob-menu-bg').fadeIn();
@@ -76,28 +107,85 @@ $(document).ready(function() {
 		$('.menu-btn-close').hide();
 		return false;
 	});
+
 	$('.lnk-sub').on('click', function () {
-		if($(this).hasClass('active')) { 
-			$(this).next().slideUp(300);
-			$(this).removeClass('active');
-		} else {
-			$(this).next().slideDown(300);
-			$(this).addClass('active');
-		};
-		return false;
+		if($(window).width() < 992) {
+			if($(this).hasClass('active')) { 
+				$(this).next().slideUp(300);
+				$(this).removeClass('active');
+			} else {
+				$(this).next().slideDown(300);
+				$(this).addClass('active');
+			};
+			return false;
+		}
 	});
 
 
+	// fancybox
+	$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '100%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none',
+		padding     : 40
+	});
+
+
+	// about text
+	$('.about__open-show').on('click', function () {
+		$('.about__open-show').hide();
+		$('.about__open-hide').show();
+		$('.about__wrap').addClass('active');
+		return false;
+	});
+	$('.about__open-hide').on('click', function () {
+		$('.about__open-show').show();
+		$('.about__open-hide').hide();
+		$('.about__wrap').removeClass('active');
+		return false;
+	});
+
+	footerHeight()
+
+
 })
+
+function footerHeight() {
+	$('.footer-padding').css({'height' : $('.footer').height() + 61});
+}
+$(window).load(function() {
+
+	footerHeight();
+
+});
+
+$(window).resize(function() {
+
+	footerHeight();
+
+});
 
 
 
 //REMOVE
 $('body').append(
 	'<div style="position: fixed; z-index: 9999; bottom: 0; right: 0; background: #fff; border: solid 1px #000; width: 250px;"> \
-		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px;position:relative;z-index:20;" onclick="$(this).parent().hide()">Закрыть X</a> \
-	<ol style="padding: 5px 0 7px 30px; margin: 0"> \
-		<li style="margin: 0;"><a href="index.html" style="color:#000;">Index</a></li> \
-		<li style="margin: 0;"><a href="typography.html" style="color:#000;">Typography</a></li> \
+		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px;position:relative;z-index:20; text-decoration:none" onclick="$(this).parent().hide()">Закрыть X</a> \
+	<ol style="padding: 9px 0 7px 30px; margin: 0"> \
+		<li style="margin: 0 0 5px;"><a href="index.html">Index</a></li> \
+		<li style="margin: 0 0 5px;"><a href="typography.html">Typography</a></li> \
+		<li style="margin: 0 0 5px;"><a href="level_0.html">Level 0</a></li> \
+		<li style="margin: 0 0 5px;"><a href="level_1.html">Level 1</a></li> \
+		<li style="margin: 0 0 5px;"><a href="level_2.html">Level 2</a></li> \
+		<li style="margin: 0 0 5px;"><a href="level_3.html">Level 3</a></li> \
+		<li style="margin: 0 0 5px;"><a href="level_4.html">Level 4</a></li> \
+		<li style="margin: 0 0 5px;"><a href="press_center.html">Press center</a></li> \
+		<li style="margin: 0 0 5px;"><a href="rukovodstvo.html">Rukovodstvo</a></li> \
 	</ol> \
 </div>');
