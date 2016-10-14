@@ -550,7 +550,10 @@ body .fancybox-skin .fancybox-close:hover {opacity: 0.7;}
 
 .owl-carousel.advantages .owl-item img {width: auto !important; display: inline !important;}
 
-
+.language {float: right; font-size: 14px; height: 30px; line-height: 30px; margin-top: -1px;}
+.language img {margin: -2px 3px 0 0; vertical-align: middle;}
+.language a {color: #000; text-decoration: none;}
+.main .language {margin-top: 21px;}
 
 
 /* ==========================================================================

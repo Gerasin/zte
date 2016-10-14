@@ -13,7 +13,7 @@
 
 @media (min-width: 992px) {
     .head__menu li {margin-right: 0;}
-    .head__menu li a, .head__menu li span {padding: 0 5px; font-size: 14px;}
+    .head__menu li a, .head__menu li span {padding: 0 2px; font-size: 14px;}
     body .mob-menu-bg, body .menu-btn-close {display: none !important;}
     .head__menu ul {margin: 0 -20px 0 -5px;}
     .lnk-sub:after {top: 13px;}
@@ -30,6 +30,7 @@
     .container {width: 1336px;}
     .head__menu li {margin-right: 18px;}
     .head__menu li a, .head__menu li span {padding: 0 16px;}
+
 }
 
 @media (max-width: 1200px) {
@@ -73,7 +74,7 @@
     .carousel .owl-dots {bottom: 10px;}
     .panel-lite .panel-heading {margin-bottom: 8px;}
     .panel-group .panel {margin-bottom: 5px;}
-    .head__menu-wrap {display: none; position: absolute; top: 0; right: 0; background: #fff; width: 478px; padding: 80px 0 0; z-index: 110; border: 0; text-align: left;}
+    .head__menu-wrap {display: none; position: absolute; top: 0; right: 0; background: #fff; width: 478px; padding: 80px 0 80px; z-index: 110; border: 0; text-align: left;}
     .head__menu-wrap li {display: block; margin: 0; border-bottom: 1px solid #e9eef1;}
     .head__menu-wrap li:last-child {border: 0;}
     .head__menu-wrap li a, .head__menu-wrap li span {display: block; background: none; color: #000; padding: 13px 20px 18px 46px; height: auto; font-size: 24px; font-weight: 300;}
@@ -106,7 +107,9 @@
     .main-baner h1, .main-baner p {display: none;}
     .main .head {position: absolute; left: 0; right: 0; border: 0; z-index: 110;}
     .main .head__menu ul {text-align: left; padding: 0;}
-    .main .head__menu-wrap {padding: 80px 0 0;}
+    .main .head__menu-wrap {padding: 80px 0 80px;}
+    .language {position: absolute; bottom: 0; left: 0; background: #e6ecf0; height: 60px; padding: 0 0 0 48px; width: 100%;}
+    .language a {font-size: 24px; height: 60px; line-height: 60px;}
 
     .head__menu li a.lnk-sub {position: relative; padding-right: 23px;}
     .lnk-sub:after {content: ' '; position: absolute; top: 23px; right: 6px;
@@ -121,6 +124,7 @@
     .advantages__item {font-size: 14px; width: 136px;}
     .advantages__item img {width: 70px;}
     .advantages:before {display: none;}
+    .main .language {margin-top: 0;}
 
 }
 
@@ -217,5 +221,7 @@
     .publication {float: none; padding: 0 0 30px; display: none;}
     .announce__list {padding-right: 0;}
     .owl-carousel__item {text-align: center;}
+    .language {height: 54px;padding: 0 0 0 20px;}
+    .language a {font-size: 18px; line-height: 54px;}
 
 }
