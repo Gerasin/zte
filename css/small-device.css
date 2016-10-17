@@ -168,7 +168,7 @@
     .workarea .main-baner__menu:before {display: none;}
     .main-baner p {display: none;}
     .main-baner__img img {height: 68px;}
-    .main .head__menu-wrap {padding: 40px 0 0;}
+    .main .head__menu-wrap {padding: 40px 0 60px;}
     .workarea .main-baner__menu li a {height: 25px; line-height: 23px; font-size: 14px; padding: 0 6px;}
     .main-baner__img {padding: 45px 0 27px;}
     .main-baner__bg {width: 1000px; margin-left: -500px;}
