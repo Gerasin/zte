@@ -59,10 +59,10 @@
     .head__logo {padding-top: 14px;}
     .wrap__submenu {display: none;}
     .container__body {margin: 0 130px;}
-    .workarea h1 {font-size: 40px;margin: 0 0 18px;font-weight: 300;}
-    .workarea h2 {font-size: 30px;margin: 0 0 18px;font-weight: 300;}
-    .workarea h3 {font-size: 24px;margin: 0 0 18px;font-weight: 300;}
-    .workarea h4 {font-size: 18px;margin: 0 0 6px;font-weight: 300;}
+    .workarea h1 {font-size: 36px;margin: 0 0 18px;font-weight: 300;}
+    .workarea h2 {font-size: 24px;margin: 0 0 18px;font-weight: 300;}
+    .workarea h3 {font-size: 18px;margin: 0 0 18px;font-weight: 300;}
+    .workarea h4 {font-size: 16px;margin: 0 0 6px;font-weight: 300;}
     .workarea p {font-size: 14px; margin-bottom: 15px;}
     .workarea blockquote {font-size: 18px; padding: 13px 20px 14px;}
     .file {font-size: 18px;}
@@ -113,11 +113,11 @@
     .main-baner h1, .main-baner p {display: none;}
     .main .head__menu ul {text-align: left; padding: 0;}
     .main .head__menu-wrap {padding: 80px 0 80px;}
-    .language {position: absolute; bottom: 0; left: 0; background: #e6ecf0; height: 60px; padding: 0 0 0 48px; width: 100%;}
+    .language {position: absolute; bottom: 0; left: 0; background: #1eb3fc; height: 60px; padding: 0 0 0 48px; width: 100%;}
     .language a {font-size: 24px; height: 60px; line-height: 60px;}
 
     .head__menu li a.lnk-sub {position: relative; padding-right: 23px;}
-    .lnk-sub:after {content: ' '; position: absolute; top: 23px; right: 6px;
+    .lnk-sub:after {content: ' '; position: absolute; top: 38px; right: 20px;
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
         border-top: 4px solid #000; }
@@ -156,8 +156,8 @@
     .head__menu-wrap li a, .head__menu-wrap li span {padding: 4px 20px 4px 20px; font-size: 16px;}
     .menu-btn-close {top: 11px; right: 15px;}
     .head__menu-wrap {padding-top: 48px;}
-    .lnk-sub:after {top: 15px;}
-    .head__logo-img {background: url(../img/them/logo-mob.png) 0 0 no-repeat; width: 55px; height: 26px;}
+    .lnk-sub:after {top: 20px;}
+    .head__logo-img {background: url(../img/them/logo-mob.png) 0 0 no-repeat; width: 59px; height: 29px;}
     .menu-btn {width: 32px; height: 22px; border-top-width: 4px; border-bottom-width: 4px;}
     .menu-btn:before {border-top-width: 4px; top: 5px;}
     .workarea blockquote {margin: 0 -15px 20px;}
@@ -165,12 +165,12 @@
     .tab li {margin-bottom: 5px;}
     .article-item__img {margin-bottom: 8px;}
     .menu-btn {top: 11px;}
-    .head {height: 46px;}
-    .head__logo {padding-top: 10px;}
+    .head {height: 50px;}
+    .head__logo {padding-top: 11px;}
     .article__wrap {margin-top: -2px;}
     .head__menu li ul li a {padding: 5px 20px 6px 35px;}
     .footer-padding {display: none;}
-    .footer {position: relative; bottom: auto; left: auto;}
+    .footer {position: relative; bottom: auto; left: auto; padding-top: 30px;}
     .workarea .main-baner__menu:before {display: none;}
     .main-baner p {display: none;}
     .main-baner__img img {height: 68px;}
@@ -207,9 +207,10 @@
     .video-open__play:after {display: none;}
     .video-open__play {margin: -17px 0 0 -17px;}
     .footer__search {width: auto;}
-    .footer-right {float: none; padding: 30px 0 0; clear: both; width: 100%;}
+    .footer-right {width: auto; padding-top: 10px;}
     .develop {text-align: left;}
     .footer__copyright {float: right; font-size: 14px;}
+    .footer__soc ul li {margin-left: 6px;}
     .advantages-header {color: #0099cc;}
     .advantages-header h4 {margin-bottom: 25px;}
     .about__wrap {overflow: hidden; height: 200px;
@@ -240,6 +241,9 @@
     body .about__lnk {margin-bottom: 30px;}
     body .about__lnk li {margin-bottom: 10px;}
     .footer-bottom {font-size: 14px;}
-    .footer-bottom__develop {float: none; margin-bottom: 7px;}
+    .footer-bottom__develop {display: none;}
+    .workarea .crubs {margin-bottom: 10px;}
+    .footer__soc span, .footer__search {display: none;}
+    .head__menu li a, .head__menu li span {list-style: 37px;}
 
 }
