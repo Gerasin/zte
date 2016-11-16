@@ -157,7 +157,7 @@ $(document).ready(function() {
 })
 
 function footerHeight() {
-	$('.footer-padding').css({'height' : $('.footer').height() + 61});
+	$('.footer-padding').css({'height' : $('.footer').innerHeight()});
 }
 $(window).load(function() {
 
